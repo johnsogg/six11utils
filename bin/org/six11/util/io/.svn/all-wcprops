@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/285/trunk/src/org/six11/util/io
+END
+Preferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/178/trunk/src/org/six11/util/io/Preferences.java
+END
+MessageHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/12/trunk/src/org/six11/util/io/MessageHandler.java
+END
+NetworkThing.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/244/trunk/src/org/six11/util/io/NetworkThing.java
+END
+Base64.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/178/trunk/src/org/six11/util/io/Base64.java
+END
+Message.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/178/trunk/src/org/six11/util/io/Message.java
+END
+StreamUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/31/trunk/src/org/six11/util/io/StreamUtil.java
+END
+SuffixFileFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/29/trunk/src/org/six11/util/io/SuffixFileFilter.java
+END
+HttpUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/32/trunk/src/org/six11/util/io/HttpUtil.java
+END
+FileWatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/257/trunk/src/org/six11/util/io/FileWatcher.java
+END
+FileUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/285/trunk/src/org/six11/util/io/FileUtil.java
+END

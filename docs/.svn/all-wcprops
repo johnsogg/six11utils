@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/svn/!svn/ver/135/trunk/docs
+END
+TODO.txt
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/135/trunk/docs/TODO.txt
+END
+latch-coterminate.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/132/trunk/docs/latch-coterminate.pdf
+END
+latch-continuation.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/132/trunk/docs/latch-continuation.pdf
+END
+latch-tee.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/132/trunk/docs/latch-tee.pdf
+END

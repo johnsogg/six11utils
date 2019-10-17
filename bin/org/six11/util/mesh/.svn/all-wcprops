@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/199/trunk/src/org/six11/util/mesh
+END
+HalfEdge.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/108/trunk/src/org/six11/util/mesh/HalfEdge.java
+END
+Triangle.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/108/trunk/src/org/six11/util/mesh/Triangle.java
+END
+Where.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/108/trunk/src/org/six11/util/mesh/Where.java
+END
+Mesh.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/199/trunk/src/org/six11/util/mesh/Mesh.java
+END

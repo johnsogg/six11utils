@@ -1,0 +1,154 @@
+<!-- $Id: build.xml 105 2010-06-01 22:43:48Z gabe.johnson $ -->
+
+<project name="util" default="compile" basedir=".">
+
+	<property name="shortName" value="util" />
+	<property name="prog" value="org.six11.util.Main" />
+	<property name="build.dir" value="build" />
+	<property name="compile.output.dir" value="${build.dir}/classes" />
+	<property name="compile.src.dir" value="src" />
+	<property name="compile.debug" value="true" />
+	<property name="compile.deprecation" value="true" />
+	<property name="compile.optimize" value="false" />
+	<property name="javadoc.output.dir" value="${build.dir}/docs" />
+	<property name="jar.output" value="${build.dir}/${shortName}.jar" />
+
+	<!-- ==================== Compilation Classpath =========================== -->
+
+	<path id="compile.classpath">
+		<fileset dir="lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<taskdef classpathref="compile.classpath" resource="genjar.properties" />
+
+	<!-- ==================== All Target ====================================== -->
+
+	<target name="all" depends="clean,compile" description="Clean build and dist directories, then compile" />
+
+	<!-- ==================== Prepare Target ================================== -->
+
+	<target name="prepare">
+		<mkdir dir="${build.dir}" />
+		<mkdir dir="${compile.output.dir}" />
+		<mkdir dir="${javadoc.output.dir}" />
+	</target>
+
+	<!-- ==================== Clean Target ==================================== -->
+
+	<target name="clean" description="Delete old class files and backup source files">
+		<delete failonerror="false">
+			<fileset defaultexcludes="no" dir="${compile.output.dir}" includes="**/*.class" />
+			<fileset defaultexcludes="no" dir="${compile.src.dir}" includes="**/*~" />
+		</delete>
+		<delete dir="${build.dir}" failonerror="false" />
+	</target>
+
+	<!-- ==================== Jar Target ====================================== -->
+
+	<target name="jar" depends="compile">
+		<jar destfile="${build.dir}/six11utils.jar" basedir="${compile.output.dir}" />
+	</target>
+
+	<target name="olive-jar" depends="compile">
+		<echo message="Using directory: ${compile.output.dir}" />
+		<genjar jarfile="${build.dir}/olive-drawing-surface.jar">
+			<class name="org.six11.util.pen.OliveDrawingSurface" />
+			<classpath>
+				<fileset dir="lib">
+					<include name="*.jar" />
+				</fileset>
+				<pathelement path="${compile.output.dir}" />
+			</classpath>
+		</genjar>
+	</target>
+
+	<target name="jar-sketchreader" depends="compile">
+		<echo message="Using directory: ${compile.output.dir}" />
+		<genjar jarfile="${build.dir}/sketch-reader.jar">
+			<class name="org.six11.util.pen.SketchReader" />
+			<library jar="lib/iText-2.1.4.jar" />
+			<classpath>
+				<fileset dir="lib">
+					<include name="*.jar" />
+				</fileset>
+				<pathelement path="${compile.output.dir}" />
+			</classpath>
+			<manifest>
+				<attribute name="Main-Class" value="org/six11/util/pen/SketchReader" />
+			</manifest>
+
+			<classfilter>
+				<!-- iText demands bouncycastle, but apparently I can get away without it -->
+				<exclude name="org.bouncycastle." />
+			</classfilter>
+
+		</genjar>
+	</target>
+
+	<!-- ==================== Compile Target ================================== -->
+
+	<target name="compile" depends="prepare" description="Compile Java sources">
+
+		<!-- Compile Java classes as necessary -->
+		<mkdir dir="${compile.output.dir}" />
+		<javac srcdir="${compile.src.dir}" destdir="${compile.output.dir}" debug="${compile.debug}" deprecation="${compile.deprecation}" optimize="${compile.optimize}" source="1.5">
+			<classpath refid="compile.classpath" />
+			<include name="**/*.java" />
+		</javac>
+
+	</target>
+
+
+	<!-- ==================== Run Target ===================================== -->
+
+	<target name="run" description="Runs arbitrary code using this project's classpath" depends="compile">
+		<java fork="yes" classname="${prog}">
+			<arg value="${args}" />
+			<classpath refid="compile.classpath" />
+			<classpath path="${compile.output.dir}" />
+		</java>
+	</target>
+
+	<!-- Use Target: will run org.six11.util.${prog} -->
+	<target name="use" description="Runs an executable in the org.six11.util package" depends="compile">
+		<java fork="yes" classname="org.six11.util.Main">
+			<arg value="${args}" />
+			<classpath refid="compile.classpath" />
+			<classpath path="${compile.output.dir}" />
+		</java>
+	</target>
+
+
+
+	<!-- ==================== Javadoc Target ================================== -->
+
+	<target name="javadoc" depends="compile, javadoc.checkProperties" description="Create Javadoc API documentation">
+
+		<mkdir dir="${javadoc.output.dir}" />
+		<javadoc sourcepath="${compile.src.dir}" destdir="${javadoc.output.dir}" additionalparam="${breakIterIf14}" packagenames="*" source="1.5">
+			<classpath refid="compile.classpath" />
+		</javadoc>
+	</target>
+
+	<target name="javadoc.private" depends="compile, javadoc.checkProperties" description="Create Javadoc for internal use (includes private items)">
+
+		<mkdir dir="${javadoc.output.dir}" />
+		<javadoc sourcepath="${compile.src.dir}" destdir="${javadoc.output.dir}" additionalparam="${breakIterIf14}" packagenames="*" access="private">
+			<classpath refid="compile.classpath" />
+		</javadoc>
+	</target>
+
+	<target name="javadoc.checkProperties" description="Sees if we need to use -breakiterator when generating javadoc">
+		<condition property="breakIterIf14" value="-breakiterator">
+			<equals arg1="1.4" arg2="${ant.java.version}" />
+		</condition>
+		<condition property="breakIterIf14" value="">
+			<not>
+				<equals arg1="1.4" arg2="${ant.java.version}" />
+			</not>
+		</condition>
+	</target>
+
+</project>

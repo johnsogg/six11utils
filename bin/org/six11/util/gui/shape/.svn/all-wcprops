@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/274/trunk/src/org/six11/util/gui/shape
+END
+ShapePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/12/trunk/src/org/six11/util/gui/shape/ShapePanel.java
+END
+Square.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/12/trunk/src/org/six11/util/gui/shape/Square.java
+END
+Circle.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/274/trunk/src/org/six11/util/gui/shape/Circle.java
+END
+Triangle.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/12/trunk/src/org/six11/util/gui/shape/Triangle.java
+END
+MovableShape.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/57/trunk/src/org/six11/util/gui/shape/MovableShape.java
+END
+ShapeFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/233/trunk/src/org/six11/util/gui/shape/ShapeFactory.java
+END
+Cross.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/23/trunk/src/org/six11/util/gui/shape/Cross.java
+END
+Areas.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/203/trunk/src/org/six11/util/gui/shape/Areas.java
+END

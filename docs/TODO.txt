@@ -1,0 +1,36 @@
+TODO:
+
+-- Data structure
+  * Need a data structure to hold raw and processed information
+  * Must be searchable, e.g. "give me lines about x units long", "which segments are near X,Y"
+  * I have something like this already in the old art thing. Just need to port/refactor. 
+  
+-- Beyond segmentation:
+
+  * Detect closed loops
+    > If it is elliptical, do not run through junction finder. keep it as an ellipse.
+  * Latcher:
+    > Latch types: 
+      \ Tee: One segment ends at the surface of another
+      \ Co-terminate: Two segments end at same location with different angles
+      \ Continuation: Two segments share angles, and they co-terminate, with a looser rule
+    > Will move/rotate/scale latched segments in some way... how? I suppose I use original segment
+      locations?
+    > Keep this separate from constraint rectification (e.g. perpendicular)
+  * Constraints beyond latching
+    > Parallel
+    > Perpendicular
+    > Same length
+    > Same angle
+    > Passes through point
+    > more...
+
+      
+? Can I just represent a smooth arc region as a distribution of angles? I need to be able to search
+  for curved segments by comparing their curvature, e.g. find curved pieces about X long that curve
+  in the following way: [..] This way I can calculate how different two given curves are. I can do
+  this if it is a spline or if it is an ellipse-arc. What does an ellipse do for me beyond giving
+  me a non-spline segment type? I can't just juse splines for everything because they would fit
+  almost-but-not-quite-straight segments perfectly, so *everything* would end up being a spline,
+  which is not what I want at all.
+  

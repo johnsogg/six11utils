@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/178/trunk/src/org/six11/util/spud
+END
+CPointAlongSegment.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/149/trunk/src/org/six11/util/spud/CPointAlongSegment.java
+END
+CRect.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/151/trunk/src/org/six11/util/spud/CRect.java
+END
+CPointOnLine.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/149/trunk/src/org/six11/util/spud/CPointOnLine.java
+END
+CNearPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/151/trunk/src/org/six11/util/spud/CNearPoint.java
+END
+CLineDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/149/trunk/src/org/six11/util/spud/CLineDefinition.java
+END
+CCircle.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/151/trunk/src/org/six11/util/spud/CCircle.java
+END
+ConstraintModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/178/trunk/src/org/six11/util/spud/ConstraintModel.java
+END
+Nothing.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/151/trunk/src/org/six11/util/spud/Nothing.java
+END
+CPointSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/151/trunk/src/org/six11/util/spud/CPointSet.java
+END
+CDouble.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/151/trunk/src/org/six11/util/spud/CDouble.java
+END
+Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/149/trunk/src/org/six11/util/spud/Test.java
+END
+CVec.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/151/trunk/src/org/six11/util/spud/CVec.java
+END
+CVecDirection.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/149/trunk/src/org/six11/util/spud/CVecDirection.java
+END
+Slot.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/149/trunk/src/org/six11/util/spud/Slot.java
+END
+Constraint.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/149/trunk/src/org/six11/util/spud/Constraint.java
+END
+Node.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/149/trunk/src/org/six11/util/spud/Node.java
+END
+CPointLocation.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/149/trunk/src/org/six11/util/spud/CPointLocation.java
+END
+CDoubleDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/149/trunk/src/org/six11/util/spud/CDoubleDefinition.java
+END
+Geom.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/151/trunk/src/org/six11/util/spud/Geom.java
+END
+Infinity.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/151/trunk/src/org/six11/util/spud/Infinity.java
+END
+CParallelLines.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/149/trunk/src/org/six11/util/spud/CParallelLines.java
+END
+CLine.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/151/trunk/src/org/six11/util/spud/CLine.java
+END
+CPerpendicularLines.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/149/trunk/src/org/six11/util/spud/CPerpendicularLines.java
+END
+CPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/151/trunk/src/org/six11/util/spud/CPoint.java
+END
+CDistance.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/149/trunk/src/org/six11/util/spud/CDistance.java
+END
